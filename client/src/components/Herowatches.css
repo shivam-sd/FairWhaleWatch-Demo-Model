@@ -1,0 +1,26 @@
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+}
+
+.card {
+  min-width: 260px;
+  max-width: 260px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
