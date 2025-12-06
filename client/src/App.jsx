@@ -6,6 +6,7 @@ import HeroSectionDetails from './components/Admin/HeroSectionDetails';
 import HeroSectionUpdate from './components/Admin/HeroSectionUpdate';
 import HeroSectionWatches from './components/Admin/HeroSectionWatches';
 import HeroWomensWatches from './components/Admin/HeroWomensWatches';
+import AddReview from './components/Admin/AddReview';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='/herosection/update/:id' element={<HeroSectionUpdate />} />
       <Route path='/herowatches' element={<HeroSectionWatches />} />
       <Route path='/herowomenwatches' element={<HeroWomensWatches />} />
+      <Route path='/addreview' element={<AddReview />} />
     </Routes>
     </div>
   )

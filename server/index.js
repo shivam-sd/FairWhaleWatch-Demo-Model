@@ -10,6 +10,7 @@ const DBConnection = require("./DB/DBConnection");
 const  HeroSection  = require("./routes/HeroSection");
 const HeroWatches = require("./routes/HeroWatches");
 const HeroWomenWatch = require("./routes/HeroWomenWatches");
+const Review = require("./routes/review");
 
 
 DBConnection();
@@ -35,6 +36,7 @@ app.use(fileUpload({
 app.use("/admin", HeroSection);
 app.use("/admin", HeroWatches);
 app.use("/admin", HeroWomenWatch);
+app.use("/admin", Review);
 
 app.get("/", (req,res) => {
     res.status(200).json({message:"Hello"});

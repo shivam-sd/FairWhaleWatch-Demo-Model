@@ -12,6 +12,8 @@ const AdminDashboard = () => {
         xl'>ADD Hero Section Men's Watche</Link>
         <Link to={'/herowomenwatches'} className='bg-blue-600 text-white text-xl p-2 rounded-
         xl'>ADD Hero Section WoMen's Watche</Link>
+        <Link to={'/addreview'} className='bg-blue-600 text-white text-xl p-2 rounded-
+        xl'>ADD Reviews </Link>
       </div>
     </div>
   )
